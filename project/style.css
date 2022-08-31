@@ -1,0 +1,380 @@
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+    background-image: url(image.png);
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(0, 0, 0.6);
+    box-sizing: border-box;
+    border-bottom: 1px solid #fff;
+    
+
+}
+
+
+nav .header {
+    font-size: larger;
+    font-weight: 3px;
+    letter-spacing: 1px;
+    margin-left: 10px;
+    
+
+}
+
+nav .header p {
+    color: aliceblue;
+    float: left;
+    text-transform: uppercase;
+
+}
+
+nav ul {
+    float: right;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+
+}
+
+nav ul li a {
+    color: seashell;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 30px;
+}
+
+nav ul li a:hover {
+    color: aqua;
+}
+
+/* nav.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px 8%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}  */
+
+.section .container {
+    width: 80%;
+    display: block;
+    margin: 0px auto;
+    padding: 50px 0px;
+
+}
+
+.container .title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.container .title h1 {
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: aqua;
+}
+
+.container.title h1::after {
+
+    height: 5px;
+    width: 100px;
+    background-color: blueviolet;
+    /* background: linear-gradient(to right, #00093c,#2d0b00); */
+    border-radius: 25px;
+    display: block;
+    margin: auto;
+}
+
+.content {
+    float: left;
+    width: 55%;
+}
+
+.image-section {
+    float: right;
+    width: 40%;
+
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+}
+
+.content .article h3 {
+    color: orange;
+    font-size: 17px;
+}
+
+.content .article p {
+    margin-top: 20px;
+    color: blue;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.button {
+    border: 2px solid blue;
+    padding: 8px 25px;
+    border-radius: 20px;
+    margin: 10px 200px;
+    background-color: aqua;
+}
+
+/* .social {
+    width: 100%;
+    clear: both;
+    margin-top: 50px;
+    text-align: center;
+} */
+
+/* .social i{
+             color: white;
+            font-size: 22px;
+            height: 45px;
+            width: 45px;
+            border-radius: 50%;
+            text-align: center;
+            margin: 0px 5px;
+        } */
+/* .social i:hover{
+            transition: 1s ease;
+            transform: rotate(360deg);
+        } */
+#About {
+    /* background-color: aqua; */
+    background: linear-gradient(to right, #00093c, #2d0b00);
+}
+
+
+/* footer */
+
+/* body{
+    background: #eef8ff;
+   } */
+footer {
+    width: 100%;
+    /* position: absolute;*/
+    bottom: 0;
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    color: #fff;
+    padding: 0px 0 30px;
+    /* border-top-left-radius: 125px; */
+    font-size: 17px;
+    line-height: 20px;
+
+}
+
+.row {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.col {
+    flex-basis: 20%;
+    padding: 10px;
+}
+
+.col h4 {
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.email-id {
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+ul li {
+    list-style: none;
+    margin-bottom: 12px;
+    margin-left: -40px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+form {
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+
+form .far {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+form input {
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+
+}
+
+form button {
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+form button .fas {
+    font-size: 16px;
+    color: #ccc;
+}
+
+.fab{
+    padding: 2vh;
+    display: flex;
+}
+
+hr {
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+
+.copyright {
+    text-align: center;
+}
+
+
+/* login */
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg,#2980b9, #8e44ad);
+    height: 100vh;
+    overflow: hidden;
+  }
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+  }
+  .center h1{
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid silver;
+  }
+  .center form{
+    padding: 0 40px;
+    box-sizing: border-box;
+  } */
+  /* form .txt_field{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+  }
+  .txt_field input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+  }
+  .txt_field label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+  }
+  .txt_field span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #2691d9;
+    transition: .5s;
+  }
+  .txt_field input:focus ~ label,
+  .txt_field input:valid ~ label{
+    top: -5px;
+    color: #2691d9;
+  }
+  .txt_field input:focus ~ span::before,
+  .txt_field input:valid ~ span::before{
+    width: 100%;
+  }
+  .pass{
+    margin: -5px 0 20px 5px;
+    color: #a6a6a6;
+    cursor: pointer;
+  }
+  .pass:hover{
+    text-decoration: underline;
+  }
+  input[type="submit"]{
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: #2691d9;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+  }
+  input[type="submit"]:hover{
+    border-color: #2691d9;
+    transition: .5s;
+  }
+  .signup_link{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #666666;
+  }
+  .signup_link a{
+    color: #2691d9;
+    text-decoration: none;
+  }
+  .signup_link a:hover{
+    text-decoration: underline;
+  } */

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form and Input</title>
+    <Style>
+        body {
+            text-align: center;
+            background-color: aqua;
+        }
+
+        form {
+
+            border: 2px solid red; 
+            border-radius: 6px;
+            width: 34%;
+            display: flex;
+            flex-direction: column; 
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); 
+            background: transparent;
+        
+
+        }
+
+        h3 {
+            color: black;
+        }
+
+        .apply {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .btn-primary{
+            background-color: yellow;
+            border-radius: 6px;
+        }
+    </Style>
+</head>
+
+<body>
+
+    <form action="Backend.php">
+        <h3> Apply </h3>
+        <div class="apply">
+            <label for="Name">Name</label>
+            : <input type="text" name="Myname" id="Name" >
+            <br>
+            <br>
+            Email :
+            <input type="email" name="Myemail">
+            <br>
+            <br>
+
+            Gendra :
+            Male<input type="radio" name="Mygendra"> FeMale<input type="radio" name="Mygendra">
+            <br>
+            <br>
+            Address :
+            <input type="text" placeholder="Enter your Address">
+            <br>
+            <br>
+            Country :
+            <input type="text" placeholder="Enter your Country">
+             <br>
+             <br>
+             State :
+             <input type="text" placeholder="Enter your State">
+             <br>
+             <br>
+            City:
+            <input type="text" placeholder="Enter your City">
+            <br>
+            <br>
+            Pin code : 
+            <input type="number" placeholder="123456">
+            <br>
+            <br>
+
+            Age :
+            <input type="number" name="age">
+            <br>
+            <br>
+            Date :
+            <input type="date" name="Date">
+        </div>
+        <br>
+
+
+        <div class="form-group mt-3">
+            <label class="mr-2">Upload your CV:</label>
+            <input type="file" name="file">
+        </div>
+        <br>
+        <button type="submit" class="btn-primary">Submit</button>
+        <br>
+
+
+
+    </form>
+</body>
+
+</html>
